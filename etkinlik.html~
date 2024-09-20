@@ -1,0 +1,377 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik</title>
+    <style>
+.topnav {
+    overflow: hidden;
+   background-image: url('event.png');
+    width: 100%; 
+    text-align: center; 
+}
+
+.topnav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.topnav input[type="text"] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    background-color: #FF1493; 
+    color: #333; 
+}
+        
+
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+
+      
+        @media screen and (max-width: 800px) {
+            .sidenav {
+                width: 100px; 
+            }
+            .main {
+                margin-left: 100px;
+            }
+          
+        }
+
+      
+        .topnav input[type="text"] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a,
+            .topnav input[type="text"] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .topnav input[type="text"] {
+                border: 1px solid #ccc;
+            }
+        }
+
+       
+        .card a {
+            display: block;
+            margin-bottom: 10px;
+			text-align:screen;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+      
+         background-image: url('event.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+}
+        }
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background-color:#FF1493;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        .img {
+            background-color: #FF1493;
+            width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: #FF1493;
+            padding: 20px;
+			text-align:screen
+            margin-top: 20px;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #FF1493;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+		.city-page {
+  padding: 50px;
+  text-align: center;
+}
+
+.event-details {
+  margin-top: 30px;
+  text-align: left;
+}
+		
+.city-selection {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.city-options button {
+  display: inline-block;
+  margin: 20px;
+  padding: 15px 30px;
+  background-color: #FF1493;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.city-options button:hover {
+  background-color: #0056b3;
+} 
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="topnav">
+
+ <img src="logo.png" alt="Logo" class="logo">
+        <a href="#anasayfa">Ana Sayfa</a>
+        <a href="#hakkinda">Hakkında</a>
+        <a href="#iletisim">İletişim</a>
+  <input type="text" placeholder="Ara...">
+  
+</div>
+
+
+<nav>
+  <a href="İzmir" onclick="loadPage('yeni 1.html')"</a>
+  <a href="" onclick="loadPage('sayfa2.html')"</a>
+  <a href="#" onclick="loadPage('sayfa3.html')"</a>
+   <a href="#" onclick="loadPage('sayfa3.html')"</a>
+</nav>
+
+<script>
+  function loadPage(url) {
+  }
+</script>
+<section class="city-selection">
+  <h2>Etkinlik Şehri Seçin</h2>
+  <div class="city-options">
+    <button onclick="loadCityPage('istanbul')">İstanbul</button>
+    <button onclick="loadCityPage('ankara')">Ankara</button>
+    <button onclick="loadCityPage('İzmir')">İzmir</button>
+    <button onclick="loadCityPage('antalya')">Antalya</button>
+	<button onclick="loadCityPage('sivas')">Sivas</button>
+  </div>
+</section>
+
+<script>
+  function loadCityPage(city) {
+    window.location.href = city + ".html";
+  }
+</script>
+<section class="city-page">
+  <h2>Etkinlik takvimi</h2>
+  <p>İstanbulda 3 Mayıs – Yaşar – JJ Kıyı İstanbul
+3 Mayıs – Bulutsuzluk Özlemi – Hayal Kahvesi Atakent
+4 Mayıs – Emir Can İğrek – Dorock XL Venue Taksim
+4 Mayıs – Güneş – Dorock XL Kadıköy
+8 Mayıs – Cem Adrian – Beylikdüzü
+10 Mayıs – Merve Özbey – JJ Kıyı İstanbul
+10 Mayıs – Sena Şener – JJ Kıyı İstanbul
+10 Mayıs – Oğuzhan Koç – JJ Kıyı İstanbul
+10 Mayıs – Emre Aydın – Dorock XL Venue Taksim
+10 Mayıs – İrem Derici – Dorock XL Venue Taksim
+11 Mayıs – Gökhan Türkmen – Hayal Kahvesi Aqua Florya
+12 Mayıs – Gülşen – Volkswagen Arena
+17 Mayıs – Mirkelam & Mabel Matiz – Küçükçiftlik Park
+18 Mayıs – Yıldız Tilbe – JJ Kartal İst Marina
+
+19 Mayıs Ücretsiz Konserler
+19 Mayıs – Emir Can İğrek – Beylikdüzü Yaşam Vadisi
+19 Mayıs – Can Bonomo – Kanyon Alışveriş Merkezi
+19 Mayıs – Tuğba Yurt – Kartal
+17 Mayıs – Simge – Maltepe Etkinlik Alanı
+17 Mayıs – Berkay Altunyay – Maltepe Etkinlik Alanı
+18 Mayıs – Pera – Maltepe Etkinlik Alanı
+19 Mayıs – Edis – Maltepe Etkinlik Alanı
+19 Mayıs – Güneş – Maltepe Etkinlik Alanı
+19 Mayıs – Mert Demir – Küçükçekmece
+18 Mayıs – Ozan Doğulu – Barbaros Meydanı
+18 Mayıs – Athena – Barbaros Meydanı
+19 Mayıs – Murda – Barbaros Meydanı
+19 Mayıs – Duman – Maçka Parkı
+19 Mayıs – Candan Erçetin – Sütlüce
+19 Mayıs – Hadise – Barbaros Meydanı
+19 Mayıs Gençlik ve Spor Bayramı’na Özel Konserler
+19 Mayıs – Chill Out Festival İstanbul
+19 Mayıs – Can Ozan – Bostancı Gösteri Merkezi
+19 Mayıs – Lokal – Hayal Kahvesi Aqua Florya
+19 Mayıs – Miles Kane – Salon İKSV
+Mayıs’ta Konserler Hız Kesmeden Devam Ediyor
+22 Mayıs – Serdar Ortaç – Harbiye
+22 Mayıs – Emre Fel – Hayal Kahvesi Atakent
+22 Mayıs – Buray – Beylikdüzü
+24 Mayıs – Pera – Hayal Kahvesi Atakent
+25 Mayıs – Cem Adrian – MOI Sahne
+27 Mayıs – Sıla –Harbiye
+31 Mayıs – Yalın – BJK Tüpraş Stadyumu
+</p>
+  <div class="event-details">
+19 Mayıs – Emir Can İğrek – Beylikdüzü Yaşam Vadisi
+19 Mayıs – Can Bonomo – Kanyon Alışveriş Merkezi
+19 Mayıs – Tuğba Yurt – Kartal
+17 Mayıs – Simge – Maltepe Etkinlik Alanı
+17 Mayıs – Berkay Altunyay – Maltepe Etkinlik Alanı
+18 Mayıs – Pera – Maltepe Etkinlik Alanı
+19 Mayıs – Edis – Maltepe Etkinlik Alanı
+19 Mayıs – Güneş – Maltepe Etkinlik Alanı
+19 Mayıs – Mert Demir – Küçükçekmece
+18 Mayıs – Ozan Doğulu – Barbaros Meydanı
+18 Mayıs – Athena – Barbaros Meydanı
+19 Mayıs – Murda – Barbaros Meydanı
+19 Mayıs – Duman – Maçka Parkı
+  </div>
+</section>
+
+
+    <div class="sidenav">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Şehirler</a>
+        <a href="#services">Sanatçılar</a>
+		  <a href="#about">Konserler</a>
+		    <a href="#about">Filmier</a>
+			<a href="#about">Sergiler</a>
+			<a href="#about">Söyleşiler</a>
+			  <a href="#about">Tiyatrolar</a>
+			     <a href="#contact">İletişim</a>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <h2>Yakındaki etkinlikler</h2>
+        </div>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>İstanbul </h2>
+                    <h5>Tarih, March 21, 2024</h5>
+                    <div class="Image" style="height: 200px;">31 Mayıs Yalın Konseri</div>
+					<img src="istanbul.png" alt="Image" class="Image"
+              
+                </div>
+                <div class="card">
+                    <h2>Ankara</h2>
+                    <h5>Tarih, Jan 24, 2024</h5>
+                    <div class="Image" style="height: 200px;">Teoman Konseri</div>
+					<img src="ankara.png" alt="Image" class="Image"
+                    
+                </div>
+           
+                <div class="card">
+                    <h3>Popular Events</h3>
+                    <div class="Image">İzmir Derbisi</div>
+					<img src="mac.png" alt="Image" class="Image"
+					<br>
+                 <div class="Image">Sivasta Festival</div>
+					<img src="sivas.png" alt="Image" class="Image"
+                    <br>
+                    
+                    <div class="Image"></div>
+                </div>
+				
+                <div class="card">
+                    <h3>Follow Us</h3>
+                    <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+                    <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+					<a href="https://www.biletix.com/anasayfa/TURKIYE/tr" target="_blank">Biletix</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Her hafta Konser,Tiyatro,Sinema Duyuruları Sizerle</h2>
+			<a href="#home">FAQ</a>
+        <a href="#about">Destek</a>
+		       <a href="#about">Bizimle çalışın</a>
+        <a href="#contact">Gizlilik Poltikası</a>
+        </div>
+    </div>
+
+</body>
+</html>

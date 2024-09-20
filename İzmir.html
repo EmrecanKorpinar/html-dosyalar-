@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>İzmir Etkinlikleri</title>
+    <style>
+        /* CSS Stillendirme */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .city-page {
+            padding: 40px;
+        }
+        .event-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+        .event-card {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .event-card h3 {
+            margin-top: 0;
+        }
+        .popular-events {
+            background-color: #f1f1f1;
+            padding: 40px;
+            text-align: center;
+        }
+        .popular-events h3 {
+            margin-top: 0;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .image {
+            width: 600px;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            margin: 0 10px;
+        }
+        .event-descriptions p {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>İzmir Etkinlikleri</h1>
+    </header>
+    <main>
+        <section class="city-page">
+            <h2>Etkinlik Şehri: İzmir</h2>
+            <p>
+                19 Mayıs – Emir Can İğrek – Beylikdüzü Yaşam Vadisi<br>
+                19 Mayıs – Can Bonomo – Kanyon Alışveriş Merkezi<br>
+                19 Mayıs – Tuğba Yurt – Kartal<br>
+                17 Mayıs – Simge – Maltepe Etkinlik Alanı<br>
+                17 Mayıs – Berkay Altunyay – Maltepe Etkinlik Alanı<br>
+                18 Mayıs – Pera – Maltepe Etkinlik Alanı<br>
+                19 Mayıs – Edis – Maltepe Etkinlik Alanı<br>
+                19 Mayıs – Güneş – Maltepe Etkinlik Alanı<br>
+                19 Mayıs – Mert Demir – Küçükçekmece<br>
+                18 Mayıs – Ozan Doğulu – Barbaros Meydanı<br>
+                18 Mayıs – Athena – Barbaros Meydanı<br>
+                19 Mayıs – Murda – Barbaros Meydanı<br>
+                19 Mayıs – Duman – Maçka Parkı
+            </p>
+            <div class="event-details">
+                <div class="event-card">
+                    <h3>Emir Can İğrek</h3>
+                    <p>19 Mayıs - İzmir Yaşam Vadisi</p>
+                </div>
+                <div class="event-card">
+                    <h3>Can Bonomo</h3>
+                    <p>19 Mayıs - Kanyon Alışveriş Merkezi</p>
+                </div>
+                <div class="event-card">
+                    <h3>Tuğba Yurt</h3>
+                    <p>19 Mayıs - Kartal</p>
+                </div>
+            </div>
+        </section>
+        <section class="popular-events">
+            <h3>Popüler Etkinlikler</h3>
+            <div class="image-container">
+                <div class="image" style="background-image: url('ızmır.png');"></div>
+                <div class="image" style="background-image: url('mac.png');"></div>
+            </div>
+            <div class="event-descriptions">
+                <p>İzmir Fuarı</p>
+                <p>Duman konseri</p>
+                <p>Göztepe-Karşıyaka</p>
+                <p>Güneş konseri</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 İzmir Etkinlikleri. Bütün hakları saklıdır.</p>
+        <a href="#">Gizlilik Politikası</a>
+        <a href="#">Kullanım Şartları</a>
+    </footer>
+</body>
+</html>
